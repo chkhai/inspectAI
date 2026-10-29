@@ -1,0 +1,36 @@
+# macOS
+.DS_Store
+
+# Virtual environment
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Secrets
+.env
+.env.*
+
+# Dataset
+data/
+
+# Model artifacts
+models/
+*.pt
+*.pth
+*.onnx
+
+# Allow final PatchCore memory bank
+!models/
+models/*
+!models/patchcore_final_bank.pt
+
+# Local MLflow data
+mlruns/
+
+# Experiment results
+results/*
+!results/normal_split.json
